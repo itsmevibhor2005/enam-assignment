@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * FINN — a triage instrument, read on a phone at 8am.
+ *
+ * The design thesis: filtering is the product, so filtering must be visible.
+ * Materiality is carried by contrast and by the weight of a row's left rule,
+ * not by badges. One accent colour exists and it is reserved for things that
+ * matter; green and red appear only on price moves. Nothing else is coloured.
+ */
+
+:root {
+  --ink: #11161f;
+  --surface: #161d27;
+  --raised: #1c2531;
+  --line: #273240;
+  --text: #e8e6e1;
+  --muted: #8a94a3;
+  --faint: #5a6472;
+  --signal: #e4a33b;
+  --up: #4fae7e;
+  --down: #d9584e;
+  color-scheme: dark;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--ink);
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-top: env(safe-area-inset-top, 0px);
+  /* Room for the fixed bottom navigation plus the home indicator. */
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  overscroll-behavior-y: none;
+}
+
+/* Financial figures are set in the serif, with tabular lining numerals so
+   columns align and digits do not jitter as values update. */
+.tnum {
+  font-family: var(--font-serif), Georgia, serif;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+/* The left rule encodes materiality. Weight, not colour, is the variable —
+   colour is reserved for the few items that clear the bar. */
+.rule-high { box-shadow: inset 3px 0 0 0 var(--signal); }
+.rule-mid  { box-shadow: inset 2px 0 0 0 var(--muted); }
+.rule-low  { box-shadow: inset 1px 0 0 0 var(--line); }
+
+.hairline { border-bottom: 1px solid var(--line); }
+
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar { width: 0; height: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Wide content scrolls inside itself so the page body never moves sideways. */
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}

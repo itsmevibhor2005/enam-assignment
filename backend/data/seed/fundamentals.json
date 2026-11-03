@@ -1,0 +1,50 @@
+{
+ "POLYCAB": {
+  "documents": [
+   {
+    "kind": "transcript",
+    "title": "Q2 FY2027 Concall Transcript",
+    "url": "seed://polycab-q2fy27",
+    "fiscal_year": 2027,
+    "quarter": 2,
+    "text": "Moderator: Welcome to the Q2 FY2027 earnings call of the company.\n\nManagement (Managing Director): Revenue for the quarter was Rs 5,842 crore, up twelve percent sequentially. EBITDA margin came in at 13.7%.\n\nOn our full-year guidance: we are retaining our revenue growth guidance of twenty to twenty-two percent for FY2027. On margins, we now expect to land at the lower end of our 14 to 15 percent band, so closer to 14 percent for the full year. The price increase took longer to pass through than we had assumed.\n\nAnalyst: You had guided FMEG to break even by Q4. Is that still on?\nManagement (CFO): We now expect FMEG to be EBITDA positive by Q2 FY2028. The marketing investment has been higher than planned.\n\nAnalyst: Capex?\nManagement (CFO): Capex for FY2027 will be around Rs 950 crore, broadly in line with what we said last quarter.\n\nManagement (Managing Director): We are confident about the demand environment and we think the business is in good shape."
+   },
+   {
+    "kind": "transcript",
+    "title": "Q1 FY2027 Concall Transcript",
+    "url": "seed://polycab-q1fy27",
+    "fiscal_year": 2027,
+    "quarter": 1,
+    "text": "Moderator: Ladies and gentlemen, welcome to the Q1 FY2027 earnings call.\n\nManagement (Managing Director): Thank you. We closed the quarter with revenue of Rs 5,210 crore, growth of eighteen percent year on year. Let me give you our view on the rest of the year. We expect to deliver revenue growth in the range of twenty to twenty-two percent for FY2027 as a whole, supported by the distribution expansion we completed last year.\n\nOn margins, our EBITDA margin for the quarter was 13.1%. We are guiding for EBITDA margins of 14 to 15 percent for FY2027. Copper prices have stabilised and we have taken a price increase in April which should flow through from Q2.\n\nOn capex, we will spend approximately Rs 900 crore in FY2027, largely towards the Halol expansion.\n\nAnalyst: On the FMEG segment, when do you expect to break even?\nManagement (CFO): We expect the FMEG business to turn EBITDA positive by Q4 FY2027. We are not guiding beyond that.\n\nAnalyst: Any update on exports?\nManagement (Managing Director): Exports should roughly double from last year's base over the next two years. We remain optimistic about the opportunity but I would not put a number on FY2027 specifically."
+   },
+   {
+    "kind": "annual_report",
+    "title": "Annual Report FY2026",
+    "url": "seed://polycab-ar26",
+    "fiscal_year": 2026,
+    "quarter": null,
+    "text": "Polycab India manufactures wires and cables and fast moving electrical goods. The wires and cables segment contributed 86% of consolidated revenue of Rs 19,840 crore in FY2026, FMEG 9% and EPC 5%. Consolidated EBITDA was Rs 2,610 crore at a margin of 13.2%, against 12.1% in FY2025. Profit after tax was Rs 1,942 crore. Cash from operations was Rs 1,480 crore against profit after tax of Rs 1,942 crore, a conversion of 76%, lower than the prior year owing to a lengthening receivables cycle; debtor days rose from 41 to 52. The company is net cash with total borrowings of Rs 180 crore against equity of Rs 9,420 crore. Contingent liabilities of Rs 412 crore relate principally to disputed tax matters. Related party transactions during the year amounted to Rs 96 crore, principally sales to a joint venture. The auditor's report is unqualified."
+   }
+  ]
+ },
+ "INFY": {
+  "documents": [
+   {
+    "kind": "transcript",
+    "title": "Q2 FY2027 Concall Transcript",
+    "url": "seed://infy-q2fy27",
+    "fiscal_year": 2027,
+    "quarter": 2,
+    "text": "Moderator: Welcome to the Q2 FY2027 earnings call.\n\nManagement (CEO): Revenue for the quarter was Rs 42,180 crore, growth of 2.9% sequentially in constant currency.\n\nManagement (CFO): We are raising our FY2027 revenue growth guidance to four to five percent in constant currency, from three to four percent earlier. We are retaining the operating margin guidance of 20 to 22 percent. Operating margin for the quarter was 21.2%.\n\nAnalyst: Large deal TCV?\nManagement (CEO): We have signed 2.4 billion dollars in the first half and we remain on track to exceed four billion dollars for the year.\n\nAnalyst: Any comment on discretionary spend?\nManagement (CEO): The environment is better than it was six months ago. It is hard to be precise."
+   },
+   {
+    "kind": "transcript",
+    "title": "Q1 FY2027 Concall Transcript",
+    "url": "seed://infy-q1fy27",
+    "fiscal_year": 2027,
+    "quarter": 1,
+    "text": "Moderator: Welcome to the Q1 FY2027 earnings call.\n\nManagement (CEO): Revenue for the quarter was Rs 40,986 crore. We are guiding for revenue growth of three to four percent in constant currency for FY2027.\n\nManagement (CFO): On margins, we are guiding for an operating margin band of 20 to 22 percent for FY2027. Our Q1 operating margin was 21.1%.\n\nAnalyst: On large deals?\nManagement (CEO): We expect total contract value of large deals to exceed four billion dollars for the full year.\n\nAnalyst: Hiring?\nManagement (CEO): We will calibrate hiring to demand. I would not give a specific number."
+   }
+  ]
+ }
+}

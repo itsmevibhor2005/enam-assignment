@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.db
+
+# Node
+node_modules/
+.next/
+out/
+
+# Local config and caches
+.env
+backend/data/cache/
