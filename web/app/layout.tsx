@@ -1,31 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Inter_Tight, Newsreader } from "next/font/google";
 
 import { BottomNav } from "@/components/shared/BottomNav";
 import { Providers } from "@/app/providers";
 import "./globals.css";
 
-/* Two families, clearly distinct in role: the serif carries company names and
-   every financial figure (tabular lining numerals), the sans carries chrome. */
-const serif = Newsreader({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const sans = Inter_Tight({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   title: "FINN",
   description: "What changed in your portfolio, and what it means.",
   manifest: "/manifest.json",
-  appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "FINN" },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "FINN",
+  },
 };
 
 export const viewport: Viewport = {
@@ -36,9 +23,27 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en">
+      <head>
+        {/* Loaded by link rather than next/font so the build never depends on
+            reaching Google. Preconnect keeps the runtime cost the same. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter+Tight:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <Providers>
           <main className="mx-auto w-full max-w-[560px]">{children}</main>

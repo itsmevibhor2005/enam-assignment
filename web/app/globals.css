@@ -22,6 +22,8 @@
   --signal: #e4a33b;
   --up: #4fae7e;
   --down: #d9584e;
+    --font-serif: "Newsreader", Georgia, serif;
+      --font-sans: "Inter Tight", system-ui, -apple-system, sans-serif;
   color-scheme: dark;
 }
 
